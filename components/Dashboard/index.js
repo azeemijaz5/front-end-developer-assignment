@@ -220,7 +220,7 @@ function ResumeBuilderStepper(props) {
                                             flexDirection: "column",
                                             justifyContent: {
                                                 md: "space-between",
-                                                md: "flex-start",
+                                                xs: "flex-start",
                                             },
                                             height: "100%",
                                         }}
