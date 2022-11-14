@@ -1,0 +1,20 @@
+.sidebarMenus{
+    .sidebarMenu{
+        transition: all .3s ease;
+        .MuiStepLabel-label{
+        }
+        .sidebarMenuIcon{
+            fill: #A3AED0;
+        }
+        &.active{
+            background-color: #4318FF;
+            border-radius: 5px;
+            .MuiStepLabel-label{
+                color: #fff;
+            }
+            .sidebarMenuIcon{
+                fill: #fff;
+            }
+        }
+    }
+}
