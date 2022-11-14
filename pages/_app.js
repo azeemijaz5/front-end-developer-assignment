@@ -1,6 +1,7 @@
 import "../styles/globals.scss";
 import { createTheme, ThemeProvider } from "@mui/material";
 import createBreakpoints from "@material-ui/core/styles/createBreakpoints";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
     const breakpoints = createBreakpoints({});
@@ -141,6 +142,33 @@ function MyApp({ Component, pageProps }) {
     });
     return (
         <ThemeProvider theme={theme}>
+            <Head>
+                <title>Front End Developer Assignment</title>
+                <link
+                    rel="apple-touch-icon"
+                    sizes="180x180"
+                    href="favicon/apple-touch-icon.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="32x32"
+                    href="favicon/favicon-32x32.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="16x16"
+                    href="favicon/favicon-16x16.png"
+                />
+                <link rel="manifest" href="favicon/site.webmanifest" />
+                <meta
+                    name="description"
+                    content="Front End Developer Assignment"
+                />
+                <meta name="keywords" content="HTML, CSS, JavaScript" />
+                <meta name="author" content="Azeem Ijaz" />
+            </Head>
             <Component {...pageProps} />
         </ThemeProvider>
     );
