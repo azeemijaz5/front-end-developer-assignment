@@ -42,6 +42,7 @@ function CardInfo() {
                             width={324}
                             height={285}
                             layout="responsive"
+                            priority
                         />
                     </Grid>
                 </Grid>
