@@ -24,9 +24,8 @@ function CardSecurity() {
                     }}
                 >
                     <Box
-                        className={"image-container"}
                         sx={{
-                            width: "91px !important",
+                            width: "91px",
                         }}
                         mb={2}
                     >

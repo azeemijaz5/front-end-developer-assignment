@@ -35,16 +35,14 @@ function CardInfo() {
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <Box className={"image-container"}>
-                            <Image
-                                src="/card.png"
-                                alt="Logo"
-                                className="image"
-                                width={324}
-                                height={285}
-                                layout="responsive"
-                            />
-                        </Box>
+                        <Image
+                            src="/card.png"
+                            alt="Logo"
+                            className="image"
+                            width={324}
+                            height={285}
+                            layout="responsive"
+                        />
                     </Grid>
                 </Grid>
             </Box>

@@ -18,10 +18,9 @@ function Earnings() {
         >
             <Box
                 sx={{
-                    width: "56px !important",
+                    width: "56px",
                     mr: 2,
                 }}
-                className={"image-container"}
             >
                 <Image
                     src="/earning.svg"

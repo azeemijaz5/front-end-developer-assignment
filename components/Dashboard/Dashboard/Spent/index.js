@@ -31,9 +31,8 @@ function Spent() {
             </Box>
             <Box
                 sx={{
-                    width: "63px !important",
+                    width: "63px",
                 }}
-                className={"image-container"}
             >
                 <Image
                     src="/spending.svg"

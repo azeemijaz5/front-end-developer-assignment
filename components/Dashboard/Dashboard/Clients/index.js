@@ -18,10 +18,9 @@ function Clients() {
         >
             <Box
                 sx={{
-                    width: "56px !important",
+                    width: "56px",
                     mr: 2,
                 }}
-                className={"image-container"}
             >
                 <Image
                     src="/clients.svg"
@@ -47,11 +46,10 @@ function Clients() {
             </Box>
             <Box
                 sx={{
-                    width: "58px !important",
+                    width: "58px",
                     padding: "5px",
                     ml: -1,
                 }}
-                className={"image-container"}
             >
                 <Image
                     src="/new-clients-right.svg"

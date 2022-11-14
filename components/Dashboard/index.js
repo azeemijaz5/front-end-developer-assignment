@@ -271,16 +271,14 @@ function ResumeBuilderStepper(props) {
                                                 <Box
                                                     sx={{
                                                         width: {
-                                                            md: "143px !important",
+                                                            md: "143px",
                                                             xs: "75% !important",
                                                         },
                                                         margin: {
+                                                            md: "unset",
                                                             xs: "auto",
                                                         },
                                                     }}
-                                                    className={
-                                                        "image-container"
-                                                    }
                                                 >
                                                     <Image
                                                         src="/logo.png"

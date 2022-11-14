@@ -26,17 +26,3 @@ a {
     background: black;
   }
 }
-.image-container {
-
-  width: 100%;
-
-  > div {
-    position: unset !important;
-  }
-
-  .image {
-    object-fit: contain;
-    position: relative !important;
-    height: unset !important;
-  }
-}

@@ -23,7 +23,6 @@ function EarningsGraph() {
                 toolbar: {
                     show: false,
                 },
-                width: "100%",
             },
             fill: {
                 type: "gradient",
@@ -33,7 +32,7 @@ function EarningsGraph() {
                     shadeIntensity: 0.5,
                     gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
                     inverseColors: true,
-                    opacityFrom: 0.4,
+                    opacityFrom: 0.5,
                     opacityTo: 0,
                     stops: [0, 100],
                     colorStops: [],
@@ -119,9 +118,8 @@ function EarningsGraph() {
                     }}
                 >
                     <Box
-                        className={"image-container"}
                         sx={{
-                            width: "30px !important",
+                            width: "30px",
                             marginLeft: "auto",
                         }}
                     >
@@ -153,6 +151,7 @@ function EarningsGraph() {
                         options={chartData.options}
                         series={chartData.series}
                         type="area"
+                        height={150}
                     />
                 )}
             </Box>

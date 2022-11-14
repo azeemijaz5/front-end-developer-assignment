@@ -38,57 +38,63 @@ function TransferHistory() {
                     backgroundColor: "#fff",
                     borderRadius: "20px",
                     padding: "20px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
                 }}
             >
-                <Typography variant="h3" mb={3}>
-                    Your Transfers
-                </Typography>
-                {transuctions.map((transuction, index) => (
-                    <Box
-                        key={index}
-                        sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "space-between",
-                            marginBottom: "20px",
-                        }}
-                    >
+                <Box>
+                    <Typography variant="h3" mb={3}>
+                        Your Transfers
+                    </Typography>
+                    {transuctions.map((transuction, index) => (
                         <Box
+                            key={index}
                             sx={{
                                 display: "flex",
                                 alignItems: "center",
+                                justifyContent: "space-between",
+                                marginBottom: "20px",
                             }}
                         >
-                            <Avatar alt="user" src={transuction.photo} />
                             <Box
-                                ml={2}
                                 sx={{
                                     display: "flex",
-                                    flexDirection: "column",
+                                    alignItems: "center",
                                 }}
                             >
-                                <Typography
-                                    variant="h4"
-                                    sx={{ fontSize: "12px" }}
+                                <Avatar alt="user" src={transuction.photo} />
+                                <Box
+                                    ml={2}
+                                    sx={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                    }}
                                 >
-                                    {transuction.from && "From"}
-                                    {transuction.to && "To"} {transuction.name}
-                                </Typography>
-                                <Typography variant="dim">
-                                    {transuction.time}
-                                </Typography>
+                                    <Typography
+                                        variant="h4"
+                                        sx={{ fontSize: "12px" }}
+                                    >
+                                        {transuction.from && "From"}
+                                        {transuction.to && "To"}{" "}
+                                        {transuction.name}
+                                    </Typography>
+                                    <Typography variant="dim">
+                                        {transuction.time}
+                                    </Typography>
+                                </Box>
                             </Box>
+                            <Chip
+                                label={
+                                    transuction.from
+                                        ? `+$${transuction.amount}`
+                                        : `-$${transuction.amount}`
+                                }
+                                color={transuction.from ? `success` : `error`}
+                            />
                         </Box>
-                        <Chip
-                            label={
-                                transuction.from
-                                    ? `+$${transuction.amount}`
-                                    : `-$${transuction.amount}`
-                            }
-                            color={transuction.from ? `success` : `error`}
-                        />
-                    </Box>
-                ))}
+                    ))}
+                </Box>
                 <Box
                     sx={{
                         textAlign: "right",
@@ -100,7 +106,6 @@ function TransferHistory() {
                             padding: "8px 10px",
                             fontSize: "16px",
                             fontWeight: "bold",
-                            marginTop: "50px",
                         }}
                         endIcon={<EastIcon />}
                     >

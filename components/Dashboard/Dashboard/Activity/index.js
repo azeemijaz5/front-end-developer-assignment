@@ -41,9 +41,8 @@ function Activity() {
             </Box>
             <Box
                 sx={{
-                    width: "87px !important",
+                    width: "87px",
                 }}
-                className={"image-container"}
             >
                 <Image
                     src="/activity.svg"
